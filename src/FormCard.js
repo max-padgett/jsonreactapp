@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+
 class FormCard extends Component {
     constructor(props) {
         super(props);
@@ -12,13 +13,10 @@ class FormCard extends Component {
     }
     onAdd(){
         
-    }
-
-    
-    
+    } 
     render() { 
         return (
-            <div >
+            <div>
                 <div className="JsonCard">
                     <form>
                         <label>Title: </label>
