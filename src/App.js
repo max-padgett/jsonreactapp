@@ -14,8 +14,10 @@ class App extends Component {
       
         <BrowserRouter>
           <switch>
-            <Route path={'/'} component={Root} exact/>
-            <Route path={'/form'} component={FormCard}/>
+            <Route  path={'/'} component={Root} exact/>
+            <div>
+            <Route  class="btn btn-success" style={{margin:'.5vh'}} path={'/form'} component={FormCard}/>
+            </div>
           </switch>
         </BrowserRouter>
        
