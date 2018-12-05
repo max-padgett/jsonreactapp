@@ -27,6 +27,11 @@ class FormCard extends Component {
                         <br/>
                         <textarea name="Description"  style={{width:'80%'}} type="text" ></textarea>
                         <br/>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                         <button class="btn btn-success" style={{margin:'.5vh'}} onClick={this.onAdd()} type="submit">Add</button>
                     </form>
                 </div> 

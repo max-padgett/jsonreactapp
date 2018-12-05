@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 import Root from "./Root";
 import './App.css';
+import FormCard from './FormCard';
 
 
 class App extends Component {
@@ -12,7 +13,10 @@ class App extends Component {
     return (
       
         <BrowserRouter>
-          <Route path={'/'} component={Root}/>
+          <switch>
+            <Route path={'/'} component={Root} exact/>
+            <Route path={'/form'} component={FormCard}/>
+          </switch>
         </BrowserRouter>
        
     );
