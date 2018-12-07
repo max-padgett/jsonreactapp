@@ -5,6 +5,7 @@ import './App.css';
 import FormCard from './FormCard';
 import Header from './Header';
 import Login from './Login';
+import Register from './Register';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <switch>
             <Route  path={'/'} component={Login} exact/>
             <Route  class="btn btn-success" style={{margin:'.5vh'}} path={'/form'} component={FormCard}/>
+            <Route  path={'/register'} component={Register} exact/>
           </switch>
         </BrowserRouter>
        
