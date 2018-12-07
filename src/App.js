@@ -3,6 +3,8 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Root from "./Root";
 import './App.css';
 import FormCard from './FormCard';
+import Header from './Header';
+import Login from './Login';
 
 
 class App extends Component {
@@ -14,10 +16,9 @@ class App extends Component {
       
         <BrowserRouter>
           <switch>
-            <Route  path={'/'} component={Root} exact/>
-            <div>
+            <Route  path={'/'} component={Login} exact/>
+            <Header/>
             <Route  class="btn btn-success" style={{margin:'.5vh'}} path={'/form'} component={FormCard}/>
-            </div>
           </switch>
         </BrowserRouter>
        
