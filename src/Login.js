@@ -6,6 +6,11 @@ class Login extends Component {
     constructor(props, context){
         super(props,context);
         this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+            email:"",
+            password:""
+        };
     }
 
     handleChange(e){
@@ -17,17 +22,22 @@ class Login extends Component {
             <div>
                 <form>
                     <FormGroup controlId="email">
-                    <ControlLabel></ControlLabel>
-
+                    <ControlLabel>Enter Email:</ControlLabel>
+                     <FormControl
+                     type="email"
+                     value = {this.state.email}
+                     placeholder=""
+                     onChange={this.handleChange}
+                     ></FormControl>
+                     <ControlLabel>Enter Password:</ControlLabel>
+                     <FormControl
+                     type="password"
+                     value = {this.state.password}
+                     placeholder=""
+                     onChange={this.handleChange}
+                     ></FormControl> 
                     </FormGroup>
                 </form>
-                <label>UserName: </label> 
-                <input type="text"></input>
-                <br/>
-                <label>Password: </label> 
-                <input type="text"></input>
-                <br/>
-                <button type="submit">Login</button>
             </div>
          );
     }

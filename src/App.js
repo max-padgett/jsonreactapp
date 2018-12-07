@@ -17,7 +17,6 @@ class App extends Component {
         <BrowserRouter>
           <switch>
             <Route  path={'/'} component={Login} exact/>
-            <Header/>
             <Route  class="btn btn-success" style={{margin:'.5vh'}} path={'/form'} component={FormCard}/>
           </switch>
         </BrowserRouter>
